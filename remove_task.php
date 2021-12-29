@@ -4,7 +4,7 @@ define("FILE_NAME", implode(DIRECTORY_SEPARATOR, array(dirname(__FILE__), "files
 define("REMOVE_FILE_NAME", implode(DIRECTORY_SEPARATOR, array(dirname(__FILE__), "files", "completed_tasks.txt")));
 
 if (!isset($argv[1])) {
-    die("Debes insertar la tarea a eliminar" . PHP_EOL);
+    die("No existen tareas a eliminar" . PHP_EOL);
 }
 
 $task = implode(" ", array_slice($argv, 1)) . PHP_EOL;
